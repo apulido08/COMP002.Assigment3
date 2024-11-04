@@ -22,3 +22,17 @@
 // Example Output:
 // console.log(searchString(“s”, “mississippi”)); // will output 4
 // console.log(searchString(“q”, “mississippi”)); // will output 0
+function searchString(ch, string) {
+    let counted = 0;
+    for (let i = 0; i < string.length; i++) {
+      if (string[i] == ch) {
+        counted ++;
+      }
+    }
+    return counted;
+  }
+  
+  
+  console.log(searchString("q", "mississippi"));
+  
+  console.log(searchString("s", "mississippi"));
